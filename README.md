@@ -4,7 +4,7 @@ manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](
 
 # How to use
 
-1. Open `docker-compose.yml` and set proper `PUID`, `PGID` for `dist-youngs-downloder` and `UID`, `GID` for `dist-webdav` and `user` for dist-komga
+1. Open `docker-compose.yml` and set proper `PUID`, `PGID` for `dist-youngs-downloder` and `UID`, `GID` for `dist-webdav` and `user` for `dist-komga`
    1. You have to set UID/GID you are currently logged in on the host
 1. Set proper `port number` for `webdav` and `komga`.
 1. Set `webdav` `username/password`
