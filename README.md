@@ -43,3 +43,7 @@ docker-compose up -d --build
 1. 동작중에 `wishlist.json`를 업데이트하면, `docker-compose restart`로 컨테이너를 재시작해야함
 1. `wishlist.json`의 `period`는 스캔 시간을 의미함. `300`보다 작을 수 없음
 1. `wishlist.json`의 `threads`는 동시에 몇개를 다운로드 할지 정하는 값. `0`이 되면 절대 안됨
+
+# 주의사항
+
+`만화`와 `웹툰` 둘다 다운로드가 가능하긴 한데.. `웹툰`은 테스트를 많이 안해봤음
