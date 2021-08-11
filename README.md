@@ -16,7 +16,7 @@ manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](
 # Tips
 
 1. If you update `wishlist.json` while running, you must restart docker container with `docker-compose restart` to apply
-1. `period` in `wishlist.json` means scan period. It can't be less than `300`
+1. `period` in `wishlist.json` means scan period. It can't be less than `300` seconds
 1. `threads` in `wishlist.json` means how many comics can be downloaded simultaneously. MUST NOT BE `0`
 
 ```sh
@@ -41,7 +41,7 @@ docker-compose up -d --build
 # Tips
 
 1. 동작중에 `wishlist.json`를 업데이트하면, `docker-compose restart`로 컨테이너를 재시작해야함
-1. `wishlist.json`의 `period`는 스캔 시간을 의미함. `300`보다 작을 수 없음
+1. `wishlist.json`의 `period`는 스캔 시간을 의미함. `300`보다 작을 수 없음 (단위 초)
 1. `wishlist.json`의 `threads`는 동시에 몇개를 다운로드 할지 정하는 값. `0`이 되면 절대 안됨
 
 # 주의사항
