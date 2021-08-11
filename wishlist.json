@@ -1,0 +1,10 @@
+{
+  "period": 600,
+  "threads": 16,
+  "wishlist": [
+    {
+      "title": "만화 제목",
+      "url": "<manatoki 만화 목록 url>"
+    }
+  ]
+}

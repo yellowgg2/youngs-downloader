@@ -1,0 +1,43 @@
+version: "3.3"
+services:
+  dist-youngs-downloder:
+    build:
+      context: .
+      args:
+        PUID: 1000
+        PGID: 1000
+    image: dist-youngs-downloader
+    restart: unless-stopped
+    volumes:
+      - ./young-downloader-log:/comics-downloader/young-downloader-log
+      - ./wishlist.json:/comics-downloader/wishlist.json:ro
+      - ./temp_download:/comics-downloader/temp_download
+      - ./zipped_output:/comics-downloader/zipped_output
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "2"
+  dist-webdav:
+    image: ugeek/webdav:amd64
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      USERNAME: username
+      PASSWORD: password
+      UID: 1000
+      GID: 1000
+      TZ: Asia/Seoul
+    volumes:
+      - ./zipped_output:/media
+  dist-komga:
+    image: gotson/komga
+    volumes:
+      - ./komga-config:/config
+      - ./zipped_output:/data
+      - /etc/timezone:/etc/timezone:ro
+    ports:
+      - 8080:8080
+    user: "1000:1000"
+    restart: unless-stopped
