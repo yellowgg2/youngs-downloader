@@ -1,6 +1,15 @@
 # Intro
 
-만화 다운로더 + 만화책 뷰어 + webdav
+나스, 리눅스 서버 용 백그라운드 다운로더 feat. `docker` (*manatoki*만 가능)
+
+이 프로그램은 아래 기능을 포함하고 있습니다
+
+- manatoki 만화 다운로더
+  - 다운로드가 완료되면 zip으로 저장
+  - 주기적인 스캔기능 (신규 업로드가 있으면 자동 다운로드)
+  - 설정에 의한 동시 다운로드
+- [komga](https://komga.org/) (만화책 뷰어)
+- [webdav](https://hub.docker.com/r/ugeek/webdav) (mobile app 용)
 
 manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](https://komga.org/)
 
@@ -48,4 +57,6 @@ docker-compose up -d --build
 
 # 주의사항
 
-`만화`와 `웹툰` 둘다 다운로드가 가능하긴 한데.. `웹툰`은 테스트를 많이 안해봤음
+- `만화`와 `웹툰` 둘다 다운로드가 가능하긴 한데.. `웹툰`은 테스트를 많이 안해봤음
+- 해당 프로그램을 이용하여 발생하는 모든 상황에 대해, 제작자는 어떠한 책임도 지지 않습니다
+- 해당 프로그램으로 제작자는 어떠한 금전적 이득을 취하지 않습니다
