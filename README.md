@@ -13,27 +13,6 @@
 
 manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](https://komga.org/)
 
-# How to use
-
-1. Open `docker-compose.yml` and set proper `PUID`, `PGID` for `dist-youngs-downloder` and `UID`, `GID` for `dist-webdav` and `user` for `dist-komga`
-   1. You have to set UID/GID you are currently logged in on the host
-1. Set proper `port number` for `webdav` and `komga`.
-1. Set `webdav` `username/password`
-1. Add items to `wishlist.json`.
-   1. `title` can be any string.
-   1. `url` **MUST** be the url of list of series
-1. Finally run below:
-
-# Tips
-
-1. If you update `wishlist.json` while running, you must restart docker container with `docker-compose restart` to apply
-1. `period` in `wishlist.json` means scan period. It can't be less than `300` seconds
-1. `threads` in `wishlist.json` means how many comics can be downloaded simultaneously. MUST NOT BE `0`
-
-```sh
-docker-compose up -d --build
-```
-
 # 사용법
 
 1. `docker-compose.yml`파일을 열어서 `dist-youngs-downloder`의 `PUID`, `PGID` `dist-webdav`의 `UID`, `GID` `dist-komga`의`user` 항목을 수정
@@ -60,3 +39,24 @@ docker-compose up -d --build
 - `만화`와 `웹툰` 둘다 다운로드가 가능하긴 한데.. `웹툰`은 테스트를 많이 안해봤음
 - 해당 프로그램을 이용하여 발생하는 모든 상황에 대해, 제작자는 어떠한 책임도 지지 않습니다
 - 해당 프로그램으로 제작자는 어떠한 금전적 이득을 취하지 않습니다
+
+# How to use
+
+1. Open `docker-compose.yml` and set proper `PUID`, `PGID` for `dist-youngs-downloder` and `UID`, `GID` for `dist-webdav` and `user` for `dist-komga`
+   1. You have to set UID/GID you are currently logged in on the host
+1. Set proper `port number` for `webdav` and `komga`.
+1. Set `webdav` `username/password`
+1. Add items to `wishlist.json`.
+   1. `title` can be any string.
+   1. `url` **MUST** be the url of list of series
+1. Finally run below:
+
+# Tips
+
+1. If you update `wishlist.json` while running, you must restart docker container with `docker-compose restart` to apply
+1. `period` in `wishlist.json` means scan period. It can't be less than `300` seconds
+1. `threads` in `wishlist.json` means how many comics can be downloaded simultaneously. MUST NOT BE `0`
+
+```sh
+docker-compose up -d --build
+```
