@@ -13,6 +13,10 @@
 
 manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](https://komga.org/)
 
+# 업데이트
+
+Clone 후 [Release](https://github.com/yellowgg2/youngs-downloader/releases)에 있는 최신 main을 다운받아 교체하여 사용하면 최신 버전으로 사용가능
+
 # 사용법
 
 1. `docker-compose.yml`파일을 열어서 `dist-youngs-downloder`의 _PUID_, _PGID_ `dist-webdav`의 _UID_, _GID_, `dist-komga`의 _user_ 항목을 수정
