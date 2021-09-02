@@ -13,6 +13,7 @@ services:
       - ./wishlist.json:/comics-downloader/wishlist.json:ro
       - ./temp_download:/comics-downloader/temp_download
       - ./zipped_output:/comics-downloader/zipped_output
+      - ./main:/comics-downloader/main
     logging:
       driver: json-file
       options:
