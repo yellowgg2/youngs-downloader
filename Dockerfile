@@ -28,6 +28,7 @@ RUN mkdir -p /comics-downloader
 COPY . /comics-downloader
 
 RUN chmod +x /comics-downloader/entry-point.sh
+RUN chmod +x /comics-downloader/complete-noti.sh
 RUN chmod +x /comics-downloader/main
 RUN chown ${PUID}:${PGID} /comics-downloader
 RUN chmod 775 /comics-downloader
