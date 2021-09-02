@@ -32,7 +32,8 @@ RUN chown ${PUID}:${PGID} /comics-downloader
 RUN chmod 775 /comics-downloader
 RUN chmod g+s /comics-downloader
 
-RUN addgroup --gid ${PGID} comics
+# RUN addgroup --gid ${PGID} comics
+RUN groupadd -o -g ${PGID} comics
 RUN adduser --disabled-password --gecos "" --force-badname --ingroup comics comics
 
 USER comics
