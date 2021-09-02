@@ -20,6 +20,8 @@ manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](
 해당 스크립트의 기본 목적은 새로운 만화 다운로드가 완료되었을 때 telegram으로 noti를 보내기 위함입니다.  
 *BOT_TOKEN과 CHAT_ID*를 추가하고 주석 풀어 사용하면 됩니다
 
+[BOT_TOKEN과 CHAT_ID 얻기 참고](https://gabrielkim.tistory.com/entry/Telegram-Bot-Token-%EB%B0%8F-Chat-Id-%EC%96%BB%EA%B8%B0)
+
 압축이 완료된 후 무언가 다른 작업을 하고 싶으면 스크립트를 바꾸시면 됩니다.
 
 스크립트의 첫번째 param은 `완료 메세지`  
