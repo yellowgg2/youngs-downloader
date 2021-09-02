@@ -47,6 +47,7 @@ docker-compose up -d --build
 1. 동작중에 `wishlist.json`를 업데이트하면, *docker-compose restart*로 컨테이너를 재시작해야함
 1. `wishlist.json`의 *period*는 스캔 시간을 의미함. `300`보다 작을 수 없음 (단위 초)
 1. `wishlist.json`의 *threads*는 동시에 몇개를 다운로드 할지 정하는 값. `0`이 되면 절대 안됨
+1. domain이 변경되는 경우가 간혹 있어서, 로그는 가끔 체크해주셔야합니다. 로그에 보면 주소를 못찾아서 error가 쭉 뜨는게 보입니다.
 
 # 주의사항
 
