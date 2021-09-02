@@ -1,6 +1,6 @@
 # Intro
 
-나스, 리눅스 서버 용 백그라운드 다운로더 feat. `docker` (*manatoki*만 가능)
+나스, 리눅스 서버 용 백그라운드 다운로더 feat. `docker` (*manatoki*, *newtoki*만 가능)
 
 이 프로그램은 아래 기능을 포함하고 있습니다
 
