@@ -1,6 +1,6 @@
 {
-  "period": 600,
-  "threads": 16,
+  "period": 3600,
+  "threads": 4,
   "wishlist": [
     {
       "title": "만화 제목",
