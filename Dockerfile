@@ -17,6 +17,7 @@ RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable 
 RUN apt update && \
     apt install -y xvfb && \
     apt install -y google-chrome-stable && \
+    apt install -y curl && \
     apt clean
 
 ARG PUID
