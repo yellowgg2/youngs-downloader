@@ -1,6 +1,6 @@
 # Intro
 
-나스, 리눅스 서버 용 백그라운드 다운로더 feat. `docker` (*manatoki*, *newtoki*만 가능)
+나스, 리눅스 서버 용 백그라운드 다운로더 feat. `docker` (_manatoki_, *newtoki*만 가능)
 
 이 프로그램은 아래 기능을 포함하고 있습니다
 
@@ -17,7 +17,7 @@ manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](
 
 다운로드가 완료되고, 압축이 완료가 되면 `complete-noti.sh`가 실행이 됩니다.
 
-해당 스크립트의 기본 목적은 완료되었을 때 telegram으로 noti를 보내기 위함입니다.  
+해당 스크립트의 기본 목적은 새로운 만화 다운로드가 완료되었을 때 telegram으로 noti를 보내기 위함입니다.  
 *BOT_TOKEN과 CHAT_ID*를 추가하고 주석 풀어 사용하면 됩니다
 
 압축이 완료된 후 무언가 다른 작업을 하고 싶으면 스크립트를 바꾸시면 됩니다.
