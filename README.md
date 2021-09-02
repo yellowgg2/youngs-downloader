@@ -13,9 +13,17 @@
 
 manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](https://komga.org/)
 
-# 업데이트
+# 완료 메세지
 
-Clone 후 [Release](https://github.com/yellowgg2/youngs-downloader/releases)에 있는 최신 main을 다운받아 교체하여 사용하면 최신 버전으로 사용가능
+다운로드가 완료되고, 압축이 완료가 되면 `complete-noti.sh`가 실행이 됩니다.
+
+해당 스크립트의 기본 목적은 완료되었을 때 telegram으로 noti를 보내기 위함입니다.  
+*BOT_TOKEN과 CHAT_ID*를 추가하고 주석 풀어 사용하면 됩니다
+
+압축이 완료된 후 무언가 다른 작업을 하고 싶으면 스크립트를 바꾸시면 됩니다.
+
+스크립트의 첫번째 param은 `완료 메세지`  
+두번째 param은 `zip 파일 경로`입니다. 혹시 unzip이 필요할 수도 있기에...
 
 # 사용법
 
