@@ -1,4 +1,4 @@
-# Intro
+# 마나토끼, 뉴토끼 만화 다운로더 + 뷰어 + Webdav
 
 나스, 리눅스 서버 용 백그라운드 다운로더 feat. `docker` (_manatoki_, *newtoki*만 가능)
 
