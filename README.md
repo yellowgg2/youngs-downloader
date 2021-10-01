@@ -46,6 +46,13 @@ manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](
 1. `wishlist.json`에 원하는 만화 목록을 추가한다
    1. `title`은 아무거나 가능
    1. `url`은 반드시 그 만화의 전체 리스트가 나오는 url이어야함
+   1. `period`는 스캔 주기 시간
+   1. `threads`는 동시 다운로드 갯수
+   1. `max_tail_number` url이 검색되지 않을 때 최대 몇번의 url 까지 시도를 해볼지
+      1. 만약 만화 url이 `manatoki100`이었는데 url이 변경되었으면 `manatoki101 부터 999까지` 시도해본다.
+      1. 중간에 url을 찾으면 다음부터 그 url에서 부터 시도한다.
+      1. url이 변경되었다고 `wishlist.json`을 업데이트 할 필요가 없음 (나중에 manatoki999까지가면 변경해줘야 하겠지만...)
+      1. 값이 없으면 기본 `999`
 1. 마지막으로 아래 명령 실행
 
 ```sh

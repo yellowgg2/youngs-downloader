@@ -1,6 +1,7 @@
 {
   "period": 3600,
   "threads": 4,
+  "max_tail_number": 999,
   "wishlist": [
     {
       "title": "만화 제목",
