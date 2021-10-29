@@ -31,6 +31,7 @@ services:
       TZ: Asia/Seoul
     volumes:
       - ./zipped_output:/media
+      - ./passwd:/etc/passwd:ro
   dist-komga:
     image: gotson/komga
     volumes:

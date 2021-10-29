@@ -41,6 +41,7 @@ manatoki downloader + [webdav](https://hub.docker.com/r/ugeek/webdav) + [komga](
 
 1. `docker-compose.yml`파일을 열어서 `dist-youngs-downloder`의 _PUID_, _PGID_ `dist-webdav`의 _UID_, _GID_, `dist-komga`의 _user_ 항목을 수정
    1. 리눅스의 현재 로그인 한 계정의 UID/GID와 같은 것으로 셋팅해야함
+1. `passwd` 파일을 열어 `www-data:x:1000:1000` 항목을 찾아 UID:GID 를 맞춰준다 (예: UID가 1026, GID가 100이라면 `www-data:x:1026:100`으로 변경)
 1. `webdav`와 `komga`의 원하는 포트번호로 수정
 1. `webdav`의 *username/password*부분을 원하는 사용자/패스워드로 수정
 1. `wishlist.json`에 원하는 만화 목록을 추가한다

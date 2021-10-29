@@ -30,13 +30,13 @@ COPY . /comics-downloader
 RUN chmod +x /comics-downloader/entry-point.sh
 RUN chmod +x /comics-downloader/complete-noti.sh
 RUN chmod +x /comics-downloader/main
-RUN chown ${PUID}:${PGID} /comics-downloader
-RUN chmod 775 /comics-downloader
-RUN chmod g+s /comics-downloader
+RUN chown -R ${PUID}:${PGID} /comics-downloader
+RUN chmod -R 775 /comics-downloader
+RUN chmod -R g+s /comics-downloader
 
 # RUN addgroup --gid ${PGID} comics
 RUN groupadd -o -g ${PGID} comics
-RUN adduser --disabled-password --gecos "" --force-badname --ingroup comics comics
+RUN adduser -u ${PUID} --disabled-password --gecos "" --force-badname --ingroup comics comics
 
 USER comics
 
